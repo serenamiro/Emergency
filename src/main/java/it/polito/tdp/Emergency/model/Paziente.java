@@ -45,6 +45,7 @@ public class Paziente implements Comparable<Paziente>{
 			return this.oraArrivo.compareTo(other.oraArrivo);
 		} else if(this.colore==CodiceColore.RED) {
 			return -1 ;
+			// IL NUMERO NEGATIVO VUOL DIRE CHE IL PRIMO è "MINORE" DEL SECONDO E QUINI PARTE PRIMA 
 		} else if(other.colore==CodiceColore.RED) {
 			return +1 ;
 		} else if(this.colore==CodiceColore.YELLOW) {
